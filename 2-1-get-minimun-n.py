@@ -4,22 +4,20 @@ def get_minimum_n(k):
     n = 0
     for i in range(1000):    
         S_n = S_n + 1/(i + 2)
-        if S_n > k:
-            print(f"Minimum value of n is {i+2}.")
-            n  = i + 2
+        print(f"Given k is {k}, and n is {n}, and S_n is {S_n}")
+        n  = i + 2
+        if S_n <= k:
+            print(f"Current value of n is {i+2}.")
+        else:
             break
-    return i
+    return n
 
 def main():
-    error_count = 0
-    while error_count < 3:
+    try:
         k = int(input("Please input an integer k: "))
-        if isinstance(k, int):
-            n = get_minimum_n(k)
-            break
-        else: 
-            error_count += 1
-            print(f"{k} is not integer, please input integer number")
+        n = get_minimum_n(k)
+    except TypeError as e:
+        print(f"{k} is not integer, please input integer number, "+ e)
     
 if __name__ == "__main__":
     main()
