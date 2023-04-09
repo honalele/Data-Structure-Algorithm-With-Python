@@ -1,5 +1,5 @@
 def get_daffodil_number():
-    """AI is creating summary for get_daffodil_number
+    """get_daffodil_number
 
     Returns:
         [list]: daffodil_numbers
