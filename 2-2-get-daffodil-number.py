@@ -1,8 +1,26 @@
 def get_daffodil_number():
-    
     daffodil_numbers = []
-    for i in range(100, 1000):
+    i = 100
+    while i < 1000:
+        # Hundreds digit
+        a = int(i/100)
+        # Tens digit, here // get the integer number
+        b = int(i%100//10)
+        # Last digits, % is get remainder
+        c = i%10
+
+        if (a**3 + b**3 + c**3) == i:
+            daffodil_numbers.append(i)
+            print(f"a: {a}, b: {b}, c: {c}, and the daffodil number i: {i}")
         
+        i += 1    
+    return daffodil_numbers
+    
+    
+if __name__ == "__main__":
+    daffodil_numbers = get_daffodil_number()
+    
+
     
     
 
