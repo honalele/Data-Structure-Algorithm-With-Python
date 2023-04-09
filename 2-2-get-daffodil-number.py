@@ -1,4 +1,9 @@
 def get_daffodil_number():
+    """AI is creating summary for get_daffodil_number
+
+    Returns:
+        [list]: daffodil_numbers
+    """    
     daffodil_numbers = []
     i = 100
     while i < 1000:

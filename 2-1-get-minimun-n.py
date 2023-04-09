@@ -1,5 +1,13 @@
 
 def get_minimum_n(k):
+    """get minimum value of n which makes S_n > k.
+
+    Args:
+        k (int): _description_
+
+    Returns:
+        n(int): _description_
+    """    
     S_n = 1
     n = 0
     for i in range(100000):    
