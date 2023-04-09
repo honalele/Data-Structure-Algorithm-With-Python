@@ -3,10 +3,10 @@ def get_minimum_n(k):
     """get minimum value of n which makes S_n > k.
 
     Args:
-        k (int): _description_
+        k (int): the threshod of S_n
 
     Returns:
-        n(int): _description_
+        n (int): the index of S_n
     """    
     S_n = 1
     n = 0
