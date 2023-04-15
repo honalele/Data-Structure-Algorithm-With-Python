@@ -9,6 +9,7 @@ Implement data structure and algorithm with Python
 
 ## Data Structure
 
+- Class
 - List
 
 ## Visualization
